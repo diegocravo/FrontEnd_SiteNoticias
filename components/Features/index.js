@@ -2,7 +2,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <div className="p-4">
+    <div className="p-2">
       <div className="card">
         <h5 className="card-header">Destaque da Semana</h5>
         <div className="card-body">
@@ -12,7 +12,7 @@ const Features = () => {
             content.
           </p>
           <a href="#" className="btn btn-primary">
-            Ver Mais ->
+            Ver Mais &rarr;
           </a>
         </div>
       </div>

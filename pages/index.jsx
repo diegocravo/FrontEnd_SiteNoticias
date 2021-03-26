@@ -1,21 +1,22 @@
 import Head from 'next/head'
 import { Container, Row, Card, Button } from 'react-bootstrap'
-import Menu from '../components/Menu'
 import Features from '../components/Features'
 import Cards from '../components/Cards'
 import Footer from '../components/Footer'
+import Newsletter from '../components/Newsletter'
+import HeaderMenu from '../components/HeaderMenu'
 
 export default function Home() {
   return (
     <div>
-      <Menu />
+    <HeaderMenu />
     <Container className="l-container">
       <Head>
         <title>ReactJS with react-bootstrap</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
       <Container>
-        <Container className="p-4">
+        <Container className="p-2">
           <Row className="justify-content-md-between">
             <Card className="sml-card">
               <Card.Body>
@@ -28,20 +29,20 @@ export default function Home() {
                 </Button>
               </Card.Body>
             </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Esportes</Card.Title>
-                <Card.Text>
-                  Find in-depth information about Next.js features and API.
-                </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/docs">
-                  Mais &rarr;
-                </Button>
+              <Card className="sml-card">
+                <Card.Body>
+                  <Card.Title>Esportes</Card.Title>
+                  <Card.Text>
+                    Find in-depth information about Next.js features and API.
+                  </Card.Text>
+                  <Button variant="primary" href="https://nextjs.org/docs">
+                    Mais &rarr;
+                  </Button>
               </Card.Body>
             </Card>
             <Card className="sml-card">
               <Card.Body>
-                <Card.Title>Atualidades</Card.Title>
+                <Card.Title>Educação</Card.Title>
                 <Card.Text>
                   Learn about Next.js in an interactive course with quizzes!
                 </Card.Text>
@@ -106,6 +107,7 @@ export default function Home() {
 
       <Cards />
       <Features />
+      <Newsletter />
 
     </Container>
     <Footer />

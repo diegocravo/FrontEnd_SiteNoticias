@@ -2,7 +2,7 @@ import React from "react";
 
 const Cards = () => {
   return (
-    <div className="card-deck p-4">
+    <div className="card-deck p-2">
       <div className="card">
         <img
           className="card-img-top"
